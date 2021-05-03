@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wybór auta</title>
+</head>
+<body>
+    <h1>Pomóż nam wybrać, który samochód do Ciebie pasuje</h1>
+    <form method="POST" action="#" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Podstawowe dane</legend>
+            <p>
+                <label for="brand">Marka:
+                    <select name="brand" id="brand">
+                        <option selected="selected">--Wybierz markę--</option>
+                        <option value="Skoda">Skoda</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Tesla">Tesla</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label name="type">Typ:</label>
+                <input type="radio" name="option" id="option1"/>
+                <label for="option1">Sedan</label>
+                <input type="radio" name="option" id="option2"/>
+                <label for="option2">Combi</label>
+                <input type="radio" name="option" id="option3"/>
+                <label for="option3">SUV</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <div>Preferencje</div>
+            <p>
+                <label type="text">Rok produkcji: </label>
+                <input type="number" id="year" value="2020" placeholder="Podaj rok produkcji"/>
+            </p>
+            <p> 
+                <label type="text">Kolor nadwozia</label><br>
+                    <input type="checkbox" name="option" id="option1"/>
+                    <label for="option1">Zielony</label><br>
+                    <input type="checkbox" name="option" id="option2"/>
+                    <label for="option2">Czerwony</label><br>
+                    <input type="checkbox" name="option" id="option3"/>
+                    <label for="option3">Biały</label><br>
+                    <input type="checkbox" name="option" id="option4"/>
+                    <label for="option4">Szary metalic</label>
+            </p>
+            <p>
+                <label for="photo">Dodaj zdjęcie Twojego wymarzonego auta: 
+                    <input type="file" name="photo" i="photo" accept="image/*"/>
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <label for="submit">Wyślij</label>
+            <input type="submit" name="submit" id="submit"/>
+            <input type="reset" name="reset" id="reset"/>
+        </fieldset>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz kontaktowy</title>
+</head>
+<body>
+    <h1>Formularz kontaktowy</h1>
+    <form action="url" method="POST">
+        <p>
+            <label name="firstname" >Imię: </label>
+            <input type="text" name="firstname" id="firstname"/>
+            <label name="lastname"> Nazwisko:</label>
+            <input type="text" name="lastname" id="lastname"/>
+        </p>
+        <p>
+            <label name="birthdate">Data urodzenia: </label>
+            <input type="date" name="birthdate" id="birthdate"/>
+        </p>
+        <p>
+            <label name="sex">Płeć: </label>
+                <input name="opt" id="opt1" type="radio"/>
+                <label for="opt1">Kobieta</label>
+                <input name="opt" id="opt2" type="radio"/>
+                <label for="opt2">Mężczyzna</label>
+                <input name="opt" id="opt3" type="radio"/>
+                <label for="opt3">Inne</label>
+        
+        </p>
+        <p>
+        <textarea cols="60" rows="10" name="message" placeholder="Tutaj wpisz swoje uwagi"></textarea>
+        </p>
+        <p>
+            <button type="submit">Wyślij zgłoszenie</button>
+        </p>
+    </form>
+</body>
+</html>

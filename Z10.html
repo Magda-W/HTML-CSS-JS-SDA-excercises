@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+</head>
+<body>
+    <h1>Włącz się w dyskusję!</h1>
+    <hr/>
+    <blockquote>
+        <b>Michał: </b><i>Który język programowania wybrać?</i>
+        <pre id="likes">+1501</pre>
+    <form action="#main" method="post">
+            <input type="submit" value="+1" for="likes" />
+            <input type="submit" value="-1" for="likes"/>
+            <br>
+            <textarea cols="60" rows="10" name="message" placeholder="Podziel się swoją opinią!"></textarea>
+            <input for="message" name="submit" type="submit" value="Dodaj"/>
+        </blockquote>
+    </form>
+    <blockquote>
+        <blockquote>
+            <b>Tomek: </b><i>Programowanie jest przereklamowane! Naucz się czegoś innnego? Może testowaanie apek?</i>
+            <pre>+3</pre>
+            <form action="#secondary">
+                <input type="submit" name="submit_tomek" id="tomek+" value="+1"/>
+                <input type="submit" name="submit_tomek" id="tomek-" value="-1"/>
+                <a href="#secondary#tomek">Dodaj odpowiedź</a>
+            </form>
+        </blockquote>
+        <blockquote>
+            <b>Heniek: </b><i>Teraz modny jest Rust - koniecznie zacznij od tego!</i>
+            <pre>-170</pre>
+            <form action="#secondary" method="post">
+                <input type="submit" name="submit_heniek" id="heniek+" value="+1"/>
+                <input type="submit" name="submit_heniek" id="heniek-" value="-1"/>
+                <a href="#secondary#heniek">Dodaj odpowiedź</a>
+            </form>
+            
+            <blockquote>
+                <b>Marta: </b><i>To spróbuj znaleźć w Polsce pierwszą pracę z tym językiem :)</i>
+                <pre>+109</pre>
+                <form action="#tertiary" method="post">
+                    <input type="submit" name="submit_marta" id="marta+" value="+1"/>
+                    <input type="submit" name="submit_marta" id="marta-" value="-1"/>
+                    <a href="#tertiary#marta">Dodaj odpowiedź</a>
+                </form>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <b>Sandra: </b><i>Wybierz Javę!</i>
+            <pre>+1896</pre>
+            <form action="#secondary" method="post">
+                <input type="submit" name="submit_sandra" id="sandra+" value="+1"/>
+                <input type="submit" name="submit_sandra" id="sandra-" value="-1"/>
+                <a href="#secondary#sandra">Dodaj odpowiedź</a>
+            </form>
+        </blockquote>
+    </blockquote>
+    
+    
+</body>
+</html>
